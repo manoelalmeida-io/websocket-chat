@@ -1,10 +1,19 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
+import { Application, ChatContainer } from './style';
 
-    </div>
+import Members from './components/Members';
+import Chat from './components/Chat';
+
+function App() {
+
+  return (
+    <Application>
+      <ChatContainer>
+        <Members/>
+        <Chat/>
+      </ChatContainer>
+    </Application>
   );
 }
 
